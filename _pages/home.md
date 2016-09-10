@@ -11,11 +11,11 @@ header:
 excerpt: >
     Alisdair's Blog <br> Musings on my hobbies, work, and studies.
 feature_row:
-  - image_path: http://placehold.it/500x300
+  - image_path: featured/sudo.png
     alt: "sudo logo"
     title: "UC SUDO"
     excerpt: "University of Canberra Student Developer Organisation, a society for developers to actually build things at UC"
-    url: "sudo.org.au"
+    url: "http://www.sudo.org.au"
     btn_label: "Check out SUDO"
   - image_path: http://placehold.it/500x300
     alt: "SpectrumUC"
@@ -24,9 +24,9 @@ feature_row:
     url: "#"
     btn_label: "Learn More"
   - image_path: http://placehold.it/500x300
-    alt: "Real 3D parallax"
-    title: "Real 3D parallax"
-    excerpt: "A learning exercise while building the sudo.org.au website"
+    alt: "Coming Soon"
+    title: "Coming Soon"
+    excerpt: "Still thinking about my next project..."
     url: "#"
     btn_label: "Learn More"
 intro:

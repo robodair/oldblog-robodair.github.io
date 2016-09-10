@@ -1,12 +1,25 @@
 #hero_author__avatar {
-    @include span(3 of 12);
-    position: relative;
-    float: left;
-    padding-right: 50px;
 
-    img {
-        border-radius: 50%;
-        padding: 5px;
-        border: 1px solid $border-color;
+    @include span(5 of 12);
+        position: relative;
+        float: left;
+        padding-right: 10px;
+
+        img {
+            border-radius: 50%;
+            padding: 5px;
+            border: 1px solid $border-color;
+            margin-bottom: 100px;
+        }
+    @include breakpoint($small) {
+        @include span(3 of 12);
+        position: relative;
+        float: left;
+        padding-right: 50px;
+
+        img {
+
+            margin-bottom: 65px;
+        }
     }
 }
