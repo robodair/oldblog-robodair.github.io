@@ -1,0 +1,12 @@
+#hero_author__avatar {
+    @include span(3 of 12);
+    position: relative;
+    float: left;
+    padding-right: 50px;
+
+    img {
+        border-radius: 50%;
+        padding: 5px;
+        border: 1px solid $border-color;
+    }
+}

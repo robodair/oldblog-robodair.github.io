@@ -1,0 +1,12 @@
+{% if page.header.profile_image %}
+<div id="hero_author__avatar">
+    <img 
+    src=
+    {% if page.header.profile_image contains "://" %} 
+    "{{ page.header.profile_image }}" 
+    {% else %} 
+    "{{ page.header.profile_image | prepend: "/images/" | prepend: base_path }}" 
+    {% endif %} 
+    alt="Profile Picture">
+</div>
+{% endif %}

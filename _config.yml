@@ -7,8 +7,8 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Dair you"
-title_separator          : " | "
+title                    : "I Dair you"
+title_separator          : '-'
 name                     : "Alisdair Robertson"
 description              : "Alisdair's blog<br>Musings on my hobbies, work, and studies."
 url                      : ""# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
