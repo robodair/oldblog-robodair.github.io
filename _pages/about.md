@@ -1,10 +1,8 @@
 ---
-layout: archive
-author_profile: true
+title: About
 permalink: /about/
 ---
-# Me
-Hello pleased to meet you! I'm quite flattered you want to know more about me.
+Hello! Pleased to meet you! I'm quite flattered you want to know more about me.
 
 I'm Alisdair Robertson, Australian born and bred, raised in Canberra (don't blame me about the politicians, _you_ voted them in). I'm interested in just about everything tech and I like to dabble in a lot of different areas.
 

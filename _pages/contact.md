@@ -1,9 +1,6 @@
 ---
-title: "Contact me!"
-layout: single
+title: "Contact"
 excerpt: "Contact me"
-sitemap: false
-author_profile: true 
 permalink: /contact/
 ---
 
