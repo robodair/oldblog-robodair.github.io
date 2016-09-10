@@ -8,7 +8,7 @@ header:
   cta_label: "View Posts"
   cta_url: "/posts/"
   caption:
-excerpt: > 
+excerpt: >
     Alisdair's Blog <br> Musings on my hobbies, work, and studies.
 feature_row:
   - image_path: http://placehold.it/500x300

@@ -11,6 +11,8 @@ title                    : "I Dair you"
 title_separator          : '-'
 name                     : "Alisdair Robertson"
 description              : "Alisdair's blog<br>Musings on my hobbies, work, and studies."
+og_image                 : "logo.png"
+logo                     : "logo.png"
 url                      : ""# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
 repository               : "robodair/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
