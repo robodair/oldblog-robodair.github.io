@@ -7,14 +7,14 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+title                    : "Dair you"
+title_separator          : "|"
+name                     : "Alisdair Robertson"
+description              : "Alisdair's blog<br>Musings on my hobbies, work, and studies."
+url                      : ""# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : ""# the subpath of your site, e.g. "/blog"
+repository               : "robodair/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : http://placehold.it/500x300 # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -46,6 +46,13 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      read_time: true
 
 # SEO Related
 google_site_verification :
@@ -55,7 +62,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : robodair
 facebook:
   username               :
   app_id                 :
@@ -70,17 +77,17 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : google # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-83915082-1
 
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Alisdair Robertson"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : 'Studying B. Eng in Network & Software Engineering at <a href="http://www.canberra.edu.au">University of Canberra</a><br><br>Data Analyst at <a href="http://www.seeingmachines.com">Seeing Machines</a> '
+  location         : "Canberra, Australia"
   email            :
   uri              :
   bitbucket        :
@@ -89,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : robodair
   google_plus      :
   keybase          :
   instagram        :
@@ -100,7 +107,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : robodair
   vine             :
   weibo            :
   xing             :
