@@ -5,9 +5,9 @@ header:
   overlay_color: "#5e616c"
   overlay_image: mm-home-page-feature.jpg
   profile_image: bio-photo.jpg
+  image: logo.png
   cta_label: "View Posts"
   cta_url: "/posts/"
-  caption:
 excerpt: >
     Alisdair's Blog <br> Musings on my hobbies, work, and studies.
 feature_row:
