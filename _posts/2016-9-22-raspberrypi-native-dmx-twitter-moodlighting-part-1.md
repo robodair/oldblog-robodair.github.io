@@ -18,7 +18,9 @@ This is Part 1 of my Twitter controlled moodlighting project.
 
 So I've been toying with this project for a while - I've been wanting to get my University to implement some more interactive things on campus. I also like building things, so I thought I'd give interactive lights a shot.
 
-<img src="/images/rpi-dmx/finished.jpg">
+Check out the video to see what this looks like in action:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y6QXU4-YSZ4" frameborder="0" allowfullscreen></iframe>
 
 ### What I want to do
 It's pretty straight forward really - I want to put lights up that everyone can change the color of just by tweeting at a specific hashtag. But first - I needed some lights that I could actually control.
