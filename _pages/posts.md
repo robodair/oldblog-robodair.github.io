@@ -7,8 +7,7 @@ permalink: /posts/
 
 # {{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}
 
-{% for post in paginator.posts %}
+{% for post in site.posts %}
   {% include archive-single.html %}
 {% endfor %}
 
-{% include paginator.html %}
