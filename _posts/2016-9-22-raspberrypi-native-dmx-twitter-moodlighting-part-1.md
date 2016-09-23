@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Raspberry Pi "Native" DMX
-exerpt: "Part 1 of my Twitter Moodlighting: Setting up my Raspberry Pi to output DMX without a fancy expensive USB box."
+excerpt: "Part 1 of my Twitter Moodlighting: Setting up my Raspberry Pi to output DMX without a fancy expensive USB box."
 categories:
   - Electronics
 tags:
@@ -11,6 +11,7 @@ tags:
   - dmx
   - lighting
   - tutorial
+  - SpectrumUC
 ---
 ## Intro
 This is Part 1 of my Twitter controlled moodlighting project.

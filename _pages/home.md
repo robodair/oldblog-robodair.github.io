@@ -17,11 +17,11 @@ feature_row:
     excerpt: "University of Canberra Student Developer Organisation, a society for developers to actually build things at UC"
     url: "http://www.sudo.org.au"
     btn_label: "Check out SUDO"
-  - image_path: http://placehold.it/500x300
+  - image_path: rpi-dmx/finished.jpg
     alt: "SpectrumUC"
     title: "SpectrumUC"
-    excerpt: "A little project I'm working on to use as a starting point for SUDO: Twitter controlled mood lights."
-    url: "#"
+    excerpt: "A little project I'm working on to use as a starting point for SUDO: Twitter controlled mood lights, I just put up Part 1: getting an RPi to control a RGB Light"
+    url: "/electronics/raspberrypi-native-dmx-twitter-moodlighting-part-1/"
     btn_label: "Learn More"
   - image_path: http://placehold.it/500x300
     alt: "Coming Soon"
