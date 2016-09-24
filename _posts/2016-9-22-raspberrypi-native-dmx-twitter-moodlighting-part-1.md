@@ -12,6 +12,8 @@ tags:
   - lighting
   - tutorial
   - SpectrumUC
+header:
+  teaser: http://dair.io/images/rpi-dmx/finished.jpg
 ---
 ## Intro
 This is Part 1 of my Twitter controlled moodlighting project.
