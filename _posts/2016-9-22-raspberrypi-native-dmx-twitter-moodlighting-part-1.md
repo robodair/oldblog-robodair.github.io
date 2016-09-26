@@ -7,7 +7,7 @@ categories:
 tags:
   - moodlighting
   - electronics
-  - raspberrypi
+  - RaspberryPi
   - dmx
   - lighting
   - tutorial
@@ -56,7 +56,7 @@ Now you're ready to put it together!
 ### MAX RS485
 <img style="width:50%;" src="/images/rpi-dmx/MAX-RS845.jpg">
 
-I had quite a bit of help here - the pointer to use a MAX RS485 came from Jonathan Andrews [post](http://www.jonshouse.co.uk/rpidmx512.cgi) where he's bit-bashing the gpio using Direct Memory Access.
+I had quite a bit of help here - the pointer to use a MAX RS485 came from Jonathan Andrews [post](http://www.jonshouse.co.uk/rpidmx512.cgi) where he's bit-bashing the GPIO using Direct Memory Access.
 
 Why do we need to use a chip at all? Well DMX uses [RS485 Differential Signalling](https://en.wikipedia.org/wiki/RS-485) which is essentially two mirrored waveforms, and the Pi can't output that. But as Jon shows, you can use a MAX RS485 to get the right DMX signal - provided you can get a pin on the Pi to output the base signal at pretty close to the right rate.
 
@@ -139,7 +139,7 @@ Once you've installed OLA as per [their guide](https://www.openlighting.org/ola/
 - Login to the Pi (via ssh or using a monitor/keyboard, the default username is `pi` and password `openlighting`)
 - Disable Pi UART Terminal (tty over serial)
 `sudo raspi-config` then Advanced Options > Serial > No
-- Change your hostname to whatever you want (can be done from inside raspi-config)
+- Change your hostname to whatever you want (can be done from inside `raspi-config`)
 - Reboot
 - Setup any Wifi networks (you can use a USB wifi dongle for the Pi B)
 - Check that the `olad` and `pi` users are in the `dialout` group with `id` and `id olad`, you should see a list of the groups they're in. If not, google how to add them.
@@ -197,4 +197,4 @@ Because Python offers a way for us to issue shell commands, we can write a scrip
 The MAX chip can get pretty hot - so just be a little careful. One of the reasons I didn't have any wires for the RE & RO pins is to minimise unnecessary current.
 
 ## Conclusion
-Long-term reliability of this remains to be seen, but it's certainly a very cool and cheap project to achieve exactly what I wanted. I'll definitely be making a few more! I hope you've enjoyed the read anf might even build one yourself. Happy coding!
+Long-term reliability of this remains to be seen, but it's certainly a very cool and cheap project to achieve exactly what I wanted. I'll definitely be making a few more! I hope you've enjoyed the read and might even build one yourself. Happy coding!
