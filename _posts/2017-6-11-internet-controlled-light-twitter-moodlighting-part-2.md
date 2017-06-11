@@ -14,6 +14,7 @@ tags:
   - Python
 header:
   teaser: http://dair.io/images/rpi-dmx/market-day-stall.jpg
+comments: true
 ---
 ### Part 1:
 [Raspberry Pi “Native” DMX](/electronics/raspberrypi-native-dmx-twitter-moodlighting-part-1/)

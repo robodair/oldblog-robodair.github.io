@@ -14,6 +14,7 @@ tags:
   - SpectrumUC
 header:
   teaser: http://dair.io/images/rpi-dmx/finished.jpg
+comments: true
 ---
 ### Part 2:
 [Twitter Controlled RPi DMX Light](/software/internet-controlled-light-twitter-moodlighting-part-2/)
