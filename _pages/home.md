@@ -23,7 +23,7 @@ feature_row:
     excerpt: "A little project I'm working on to use as a starting point for SUDO: Twitter controlled mood lights, I just put up Part 2: Controlling the lights remotely"
     url: "/electronics/raspberrypi-native-dmx-twitter-moodlighting-part-1/"
     btn_label: "Learn More"
-  - image_path: http://placehold.it/500x300
+  - image_path: https://placehold.it/500x300
     alt: "Coming Soon"
     title: "Coming Soon"
     excerpt: "Still thinking about my next project..."
