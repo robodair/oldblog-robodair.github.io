@@ -15,6 +15,9 @@ tags:
 header:
   teaser: http://dair.io/images/rpi-dmx/finished.jpg
 ---
+### Part 2:
+[Twitter Controlled RPi DMX Light](/software/internet-controlled-light-twitter-moodlighting-part-2/)
+
 ## Intro
 This is Part 1 of my Twitter controlled moodlighting project.
 
