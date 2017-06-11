@@ -18,22 +18,26 @@ header:
 ### Part 1:
 [Raspberry Pi “Native” DMX](/electronics/raspberrypi-native-dmx-twitter-moodlighting-part-1/)
 
+UPDATE: I've not done anything more on this project for several months - Uni really gets in the way.
+I had this mostly-finished post almost ready to go so I'm putting it up now.
+I'm not sure if I'll revisit this project later on and expand it to my original plans or not, no promises.
+
 ## Intro
-This is Part 2 of my Twitter controlled moodlighting project, although I've expanded it now so it's no longer just going to be Twitter controlled.
+This is Part 2 of my Twitter controlled moodlighting project.
 
 The idea is to create a number of RasperryPi's configured to output DMX, and provide some way to coordinate them remotely. From there I can build anything I like on top.
 
 I used the first iteration of this project at my university market day stall for the Student Developer Organisation (Sudo).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/nicholasklomp">@nicholasklomp</a> drop by the <a href="https://twitter.com/sudo_uc">@sudo_uc</a> market day stall and I&#39;ll show you the <a href="https://twitter.com/hashtag/spectrumuc?src=hash">#spectrumuc</a> project we&#39;ve been working on!<br>purple <a href="https://t.co/d36YW2JvYz">pic.twitter.com/d36YW2JvYz</a></p>&mdash; Alisdair Robertson (@robodair) <a href="https://twitter.com/robodair/status/829130866320306176">February 8, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!--<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
 
-It also just so happened that Andrew Barr (Chief Minister of the ACT) showed up and changed the colour of our light! (To red of course)
+It also just so happened that Andrew Barr (Chief Minister of the ACT) showed up and changed the colour of our light! (To red, of course)
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A huge shoutout to Andrew Barr at <a href="https://twitter.com/UniCanberra">@UniCanberra</a> Market Day today! Thank you for stopping by. <a href="https://t.co/duPgiEKEUR">https://t.co/duPgiEKEUR</a> <a href="https://t.co/SuHxbtAcTG">pic.twitter.com/SuHxbtAcTG</a></p>&mdash; UC Sudo. (@sudo_uc) <a href="https://twitter.com/sudo_uc/status/829208017296056320">February 8, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!--<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://twitter.com/sudo_uc">@sudo_uc</a> red</p>&mdash; Andrew Barr (@ABarrMLA) <a href="https://twitter.com/ABarrMLA/status/829155455628832768">February 8, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Great to visit the <a href="https://twitter.com/UniCanberra">@UniCanberra</a> Market Day today.  <a href="https://twitter.com/hashtag/StudyCanberra?src=hash">#StudyCanberra</a><a href="https://twitter.com/hashtag/CBR?src=hash">#CBR</a> <a href="https://t.co/Cxyh9K8jOd">pic.twitter.com/Cxyh9K8jOd</a></p>&mdash; Andrew Barr (@ABarrMLA) <a href="https://twitter.com/ABarrMLA/status/829215306103021568">February 8, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Bits and Pieces
@@ -86,7 +90,7 @@ In short:
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade
-sudo apt-get install build-essential libncursesw5-dev libgdbm-dev libc6-dev 
+sudo apt-get install build-essential libncursesw5-dev libgdbm-dev libc6-dev
 sudo apt-get install zlib1g-dev libsqlite3-dev tk-dev
 sudo apt-get install libssl-dev openssl
 cd ~
@@ -175,7 +179,7 @@ class Database(object):
         sys.stdout.flush()
 
         # Get the firebase configuration and init a connection
-        self.database = pyrebase.initialize_app(self.get_firebase_config()) 
+        self.database = pyrebase.initialize_app(self.get_firebase_config())
 
         auth = self.database.auth()
         self.user = auth.sign_in_with_email_and_password(*self.get_credentials())
@@ -344,4 +348,8 @@ For the Twitter bot side of things, there's two more libraries beside Pyrebase w
 
 In the longer term I'll write a nice python module backend for my projects using spectrum, so they can just `import spectrum` and go with it, but for this one we're still going to be pretty tightly coupled.
 
+All the twitter bot does is wait for new tweets on a hashtag, finds the colour word in the tweet, and stored the corresponding RGB colour in firebase.
 
+
+
+There's a lot that could be done to make this more robust, but it's gone well for a small project that got some solid wow-factor.
